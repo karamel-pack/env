@@ -1,0 +1,19 @@
+{
+    "name": "karamel/env",
+    "description": "read .env file",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amir kalantar",
+            "email": "amir.kalantar74@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Karamel\\Env\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

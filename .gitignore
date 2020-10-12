@@ -1,0 +1,16 @@
+/.idea
+/.vscode
+/.vagrant
+# Gradle:
+
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+/vendor
+Test.php
+.env
