@@ -2,6 +2,7 @@
     "name": "karamel/env",
     "description": "read .env file",
     "type": "library",
+    "keywords": ["env", "dotenv", "environment" ,"config_file","php"] ,
     "license": "MIT",
     "authors": [
         {
@@ -18,5 +19,7 @@
         ]
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^5.2"
+    }
 }
