@@ -12,7 +12,10 @@
     "autoload": {
         "psr-4": {
             "Karamel\\Env\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helpers/Env.php"
+        ]
     },
     "minimum-stability": "dev",
     "require": {}
