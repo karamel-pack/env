@@ -12,17 +12,33 @@ class File implements IEnv
     private $path;
     private $envs;
 
+    /**
+     * File constructor.
+     * @param $path
+     */
     public function __construct($path)
     {
         $this->path = $path;
     }
 
+    /**
+     * @param $key
+     * @param null $default
+     * @return mixed|null
+     * @throws EnvFileInvalidFormatException
+     * @throws EnvFileNotFoundException
+     */
     public function get($key, $default = null)
     {
-
+        return isset($this->read()[$key]) ? $this->read()[$key] : $default;
     }
 
-    public function read()
+    /**
+     * @return array
+     * @throws EnvFileInvalidFormatException
+     * @throws EnvFileNotFoundException
+     */
+    private function read()
     {
         if ($this->envs)
             return $this->envs;
@@ -46,10 +62,10 @@ class File implements IEnv
             else
                 $value = $items[0];
 
-            $this->envs[$key] = $value ;
+            $this->envs[$key] = $value;
         }
 
-        return $this->envs ;
+        return $this->envs;
 
     }
 
